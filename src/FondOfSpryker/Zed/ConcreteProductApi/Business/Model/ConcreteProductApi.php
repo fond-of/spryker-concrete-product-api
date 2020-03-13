@@ -72,6 +72,8 @@ class ConcreteProductApi implements ConcreteProductApiInterface
     /**
      * @param \Generated\Shared\Transfer\ApiRequestTransfer $apiRequestTransfer
      *
+     * @throws
+     *
      * @return \Generated\Shared\Transfer\ApiCollectionTransfer
      */
     public function find(ApiRequestTransfer $apiRequestTransfer): ApiCollectionTransfer

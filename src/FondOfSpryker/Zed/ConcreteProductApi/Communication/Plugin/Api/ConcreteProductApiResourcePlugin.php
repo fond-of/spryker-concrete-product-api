@@ -3,6 +3,7 @@
 namespace FondOfSpryker\Zed\ConcreteProductApi\Communication\Plugin\Api;
 
 use FondOfSpryker\Zed\ConcreteProductApi\ConcreteProductApiConfig;
+use Generated\Shared\Transfer\ApiCollectionTransfer;
 use Generated\Shared\Transfer\ApiDataTransfer;
 use Generated\Shared\Transfer\ApiItemTransfer;
 use Generated\Shared\Transfer\ApiRequestTransfer;
@@ -68,7 +69,7 @@ class ConcreteProductApiResourcePlugin extends AbstractPlugin implements ApiReso
      *
      * @return \Generated\Shared\Transfer\ApiItemTransfer
      */
-    public function remove($id)
+    public function remove($id): ApiItemTransfer
     {
         throw new ApiDispatchingException('Remove method is not implemented yet.', ApiConfig::HTTP_CODE_NOT_FOUND);
     }
@@ -78,7 +79,7 @@ class ConcreteProductApiResourcePlugin extends AbstractPlugin implements ApiReso
      *
      * @return \Generated\Shared\Transfer\ApiCollectionTransfer
      */
-    public function find(ApiRequestTransfer $apiRequestTransfer)
+    public function find(ApiRequestTransfer $apiRequestTransfer): ApiCollectionTransfer
     {
         return $this->getFacade()->findConditionalProducts($apiRequestTransfer);
     }
