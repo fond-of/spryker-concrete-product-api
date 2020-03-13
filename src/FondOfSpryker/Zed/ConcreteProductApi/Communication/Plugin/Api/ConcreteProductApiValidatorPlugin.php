@@ -9,6 +9,7 @@ use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
 /**
  * @method \FondOfSpryker\Zed\ConcreteProductApi\ConcreteProductApiConfig getConfig()
+ * @method \FondOfSpryker\Zed\ConcreteProductApi\Business\ConcreteProductApiFacadeInterface getFacade()
  */
 class ConcreteProductApiValidatorPlugin extends AbstractPlugin implements ApiValidatorPluginInterface
 {
