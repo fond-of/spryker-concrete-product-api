@@ -72,8 +72,6 @@ class ConcreteProductApi implements ConcreteProductApiInterface
     /**
      * @param \Generated\Shared\Transfer\ApiRequestTransfer $apiRequestTransfer
      *
-     * @throws
-     *
      * @return \Generated\Shared\Transfer\ApiCollectionTransfer
      */
     public function find(ApiRequestTransfer $apiRequestTransfer): ApiCollectionTransfer
@@ -119,8 +117,6 @@ class ConcreteProductApi implements ConcreteProductApiInterface
     }
 
     /**
-     * @throws
-     *
      * @return \Generated\Shared\Transfer\PropelQueryBuilderColumnSelectionTransfer
      */
     protected function buildColumnSelection(): PropelQueryBuilderColumnSelectionTransfer
@@ -146,7 +142,7 @@ class ConcreteProductApi implements ConcreteProductApiInterface
      *
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      *
-     * @return array|\Generated\Shared\Transfer\ApiCollectionTransfer
+     * @return \Generated\Shared\Transfer\ApiCollectionTransfer
      */
     protected function addPagination(
         ModelCriteria $query,

@@ -43,8 +43,6 @@ class ConcreteProductApiBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\ConcreteProductApi\Dependency\Facade\ConcreteProductApiToProductFacadeInterface
      */
     protected function getProductFacade(): ConcreteProductApiToProductFacadeInterface
@@ -53,8 +51,6 @@ class ConcreteProductApiBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\ConcreteProductApi\Dependency\QueryContainer\ConcreteProductApiToApiQueryContainerInterface
      */
     protected function getApiQueryContainer(): ConcreteProductApiToApiQueryContainerInterface
@@ -63,8 +59,6 @@ class ConcreteProductApiBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\ConcreteProductApi\Dependency\QueryContainer\ConcreteProductApiToApiQueryBuilderQueryContainerInterface
      */
     protected function getApiQueryBuilderQueryContainer(): ConcreteProductApiToApiQueryBuilderQueryContainerInterface
