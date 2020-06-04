@@ -10,6 +10,7 @@ use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 /**
  * @method \FondOfSpryker\Zed\ConcreteProductApi\ConcreteProductApiConfig getConfig()
  * @method \FondOfSpryker\Zed\ConcreteProductApi\Business\ConcreteProductApiFacadeInterface getFacade()
+ * @method \FondOfSpryker\Zed\ConcreteProductApi\Persistence\ConcreteProductApiQueryContainerInterface getQueryContainer()
  */
 class ConcreteProductApiValidatorPlugin extends AbstractPlugin implements ApiValidatorPluginInterface
 {
